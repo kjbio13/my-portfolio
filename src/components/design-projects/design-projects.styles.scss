@@ -1,0 +1,12 @@
+.design-projects {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5em;
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  

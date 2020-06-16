@@ -1,0 +1,42 @@
+.card {
+  height: 180px;
+  border-left: 13px solid #39664e;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 3fr;
+  grid-template-areas:
+    "image image details details"
+    "image image buttons buttons";
+
+  @media screen and (max-width: 1000px) {
+    height: 180px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-template-areas:
+      "image"
+      "details"
+      "buttons";
+  }
+
+  &__image {
+    // height: 100px;
+    grid-area: image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__details {
+    grid-area: details;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

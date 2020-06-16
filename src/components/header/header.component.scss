@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "header__logo--grid header__logo--grid header__logo--grid"
+    "header__link__list--grid header__link__list--grid header__link__list--grid";
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "header__logo--grid"
+      "header__link__list--grid";
+  }
+
+  &__logo {
+    font-family: "Staatliches", cursive;
+    // justify-self: center;
+    text-align: center;
+    cursor: pointer;
+    grid-area: header__logo--grid;
+    font-size: 3em;
+  }
+
+  &__link {
+    &__list {
+      grid-area: header__link__list--grid;
+      text-align: center;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 0.5em;
+      }
+
+      a.active {
+        font-weight: 900;
+      }
+    }
+    &__item {
+      font-size: 1.3em;
+      @media screen and (max-width: 800px) {
+        border: 2px solid #000;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 1.5em;
+      }
+      &:hover {
+        color: #39664E;
+        @media screen and (max-width: 800px) {
+          font-weight: 0;
+          background-color: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

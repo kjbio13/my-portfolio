@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import { Helmet } from 'react-helmet'
+import { GlobalStyle } from './global.styles'
 
-function App() {
+import Header from './components/header/header.component'
+
+
+import HomePage from './pages/homepage/homepage.component'
+import DesignPage from './pages/design-page/design.component';
+import DevelopmentPage from './pages/development-page/development.component';
+import PersonalPage from './pages/personal-page/personal.component'
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      </Helmet>
+      <GlobalStyle />
+
+      <Header />
+
+      <Switch>
+
+        <Route exact path="/" component={HomePage} />
+        <Route path="/design" component={DesignPage} />
+        <Route exact path="/development" component={DevelopmentPage} />
+        <Route path="/personal" component={PersonalPage} />
+
+      </Switch>
+
+
     </div>
-  );
+  )
 }
 
 export default App;

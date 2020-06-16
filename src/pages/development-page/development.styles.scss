@@ -1,0 +1,13 @@
+.development {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    a.active{
+        text-decoration: underline;
+    }
+  }
+}

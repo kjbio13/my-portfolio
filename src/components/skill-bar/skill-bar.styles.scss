@@ -1,0 +1,27 @@
+.skill-bar {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20px;
+
+  @media screen and (max-width:800px) {
+      font-size: 0.8em;
+      height: 20px;
+  }
+
+
+  &__text{
+      text-align: right;
+      padding-right: 1em;
+      align-self: center;
+  }
+  &__tile {
+    background-color: #B21717;
+    font-size: 0.7em;
+    align-self: center;
+    color: #fff;
+    padding: 5px 2px;
+  }
+}
