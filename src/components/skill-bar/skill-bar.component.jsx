@@ -2,7 +2,7 @@ import React from 'react';
 
 import './skill-bar.styles.scss';
 
-const SkillBar = ({ text, bar }) => {
+const SkillBar = ({ text, bar, color }) => {
 
 
 
@@ -10,7 +10,7 @@ const SkillBar = ({ text, bar }) => {
 
         <div className="skill-bar">
             <div className="skill-bar__text">{text}</div>
-            <div className="skill-bar__tile" style={{ width: `${bar * 30}px` }}>
+            <div className="skill-bar__tile" style={{ width: `${bar * 30}px`, backgroundColor: `${color}` }}>
 
                 {bar === 4 ? "Confident" : null}
                 {bar === 3 ? "Good" : null}

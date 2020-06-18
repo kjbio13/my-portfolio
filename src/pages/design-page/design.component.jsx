@@ -31,6 +31,8 @@ const DesignPage = ({ match }) => {
                 component={DesignSkills}
             />
 
+           
+            
             <Route
                 exact path={`${match.path}`}
                 component={DesignProjects}

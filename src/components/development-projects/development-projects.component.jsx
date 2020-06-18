@@ -1,18 +1,18 @@
 import React from 'react';
 
-import './design-projects.styles.scss';
+import './development-projects.styles.scss';
 
-import Card from '../../components/card/card.component';
+import Card from '../card/card.component';
 
-import DESIGN_DATA from './design.data.js';
+import DEVELOPMENT_DATA from './development.data.js';
 
-class DesignProjects extends React.Component {
+class DevelopmentProjects extends React.Component {
 
     constructor(props) {
         super(props);
  
         this.state = {
-            data: DESIGN_DATA,
+            data: DEVELOPMENT_DATA,
             match: props.match
         }
     }
@@ -28,8 +28,8 @@ class DesignProjects extends React.Component {
             <div>
             {/* {console.log(match)} */}
             
-             {`${match.path}` === "/design" ? <h3>PROJECTS</h3> : null}
-                <div className="design-projects">
+             {`${match.path}` === "/development" ? <h3>PROJECTS</h3> : null}
+                <div className="development-projects">
 
                     {data.map(({ id, ...otherCollectionProps }) => (
                         <Card key={id} {...otherCollectionProps} />
@@ -42,4 +42,4 @@ class DesignProjects extends React.Component {
     }
 };
 
-export default DesignProjects;
+export default DevelopmentProjects;
