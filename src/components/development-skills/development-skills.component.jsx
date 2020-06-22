@@ -2,53 +2,91 @@ import React from 'react';
 
 import './development-skills.styles.scss'
 
-import SkillsBar from '../skill-bar/skill-bar.component'
+import SkillsContainer from '../skills-container/skills-container.component'
 
-import SKILLS_DATA from '../../data/skills.data'
+import DEVELOPMENT_DATA from '../../data/development-skills.data'
 
 class DevelopmentSkills extends React.Component {
 
     constructor(props) {
         super(props);
 
+
         this.state = {
-            data: SKILLS_DATA
+            frontend_data: DEVELOPMENT_DATA.frontend,
+            backend_data: DEVELOPMENT_DATA.backend,
+            devops_data: DEVELOPMENT_DATA.devops,
+            data: "frontend"
         }
+
+        this.handleFrontendClick = this.handleFrontendClick.bind(this);
+        this.handleBackendClick = this.handleBackendClick.bind(this);
+        this.handleDevopsClick = this.handleDevopsClick.bind(this);
+    }
+
+
+    handleFrontendClick() {
+        this.setState({
+            data: "frontend"
+        })
+    }
+
+    handleBackendClick() {
+        this.setState({
+            data: "backend"
+        })
+    }
+
+    handleDevopsClick() {
+        this.setState({
+            data: "devops"
+        })
     }
 
     render() {
 
-        const { data } = this.state;
-        
-        return (
-            <div className="development-skills">
-                <div className="development-skills__frontend">
-                    <h3>Front End</h3>
-                    {
-                        data.development.frontend.map(({ id, ...otherProps }) => (
-                            <SkillsBar key={id} {...otherProps} />
-                        )
+        const { frontend_data, backend_data, devops_data, data } = this.state;
 
-                        )
+        return (
+            <div>
+
+                <div className="development-skills__links">
+
+                    {
+                        (data === "frontend")
+                            ?
+                            <p className="development-skills__links--active" onClick={this.handleFrontendClick}>Front End</p>
+                            :
+                            <p onClick={this.handleFrontendClick}>Front End</p>
                     }
 
-                </div>
-                <div className="development-skills__backend">
-                    <h3>Backend</h3>
-                    <SkillsBar text="Node.js" bar={4} />
-                    <SkillsBar text="Express" bar={4} />
-                    <SkillsBar text="Java" bar={3} />
-                    <SkillsBar text="Python" bar={2} />
-                    <SkillsBar text="Django" bar={2} />
-                    <SkillsBar text="C#" bar={3} />
+                    {
+                        (data === "backend")
+                            ?
+                            <p className="development-skills__links--active" onClick={this.handleBackendClick}>Back End</p>
+                            :
+                            <p onClick={this.handleBackendClick}>Back End</p>
+                    }
+
+
+
+                    {
+                        (data === "devops")
+                            ?
+                            <p className="development-skills__links--active" onClick={this.handleDevopsClick}>Dev Ops</p> :
+                            <p onClick={this.handleDevopsClick}>Dev Ops</p>
+                    }
+
 
                 </div>
-                <div className="development-skills__graphic">
-                    <h3>Version Control & Testing</h3>
-                    <SkillsBar text="Graphic Design" bar={4} />
-                    <SkillsBar text="Graphic Design" bar={4} />
-                </div>
 
+                <div className="development-skills">
+
+                    {(data === "frontend") ? <SkillsContainer data={frontend_data} /> : null}
+                    {(data === "backend") ? <SkillsContainer data={backend_data} /> : null}
+                    {(data === "devops") ? <SkillsContainer data={devops_data} /> : null}
+
+                </div>
             </div>
         );
     }

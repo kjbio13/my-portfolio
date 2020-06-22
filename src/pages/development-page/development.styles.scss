@@ -3,15 +3,27 @@
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 800px) {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   &__links {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    grid-column-gap: 0.8em;
+    text-align: center;
+    a {
+      @media screen and (max-width: 600px) {
+        border: 2px solid #000;
+        font-size: 0.9rem;
+      }
+    }
     a.active {
       text-decoration: underline;
+      @media screen and (max-width: 600px) {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+      }
     }
   }
 }

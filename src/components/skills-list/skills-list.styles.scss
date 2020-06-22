@@ -1,0 +1,39 @@
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-row-gap: 1em;
+  width: 30vw;
+  margin-top: 20px;
+  align-self: start;
+  animation: 0.5s ease-out 0s 1 slideInFromLeft;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  // 0% {
+  //   transform: translateY(-100%);
+  // }
+  // 25% {
+  //   transform: translateY(0);
+  // }
+  // 50% {
+  //   transform: translateY(-110%);
+  // }
+  // 100% {
+  //   transform: translateY(0);
+  // }
+}

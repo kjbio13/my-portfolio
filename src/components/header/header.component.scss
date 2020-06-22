@@ -4,13 +4,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-column-gap: 0.9em;
   grid-template-areas:
     "header__logo--grid header__logo--grid header__logo--grid"
     "header__link__list--grid header__link__list--grid header__link__list--grid";
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
     grid-template-areas:
       "header__logo--grid"
       "header__link__list--grid";
@@ -18,7 +19,6 @@
 
   &__logo {
     font-family: "Staatliches", cursive;
-    // justify-self: center;
     text-align: center;
     cursor: pointer;
     grid-area: header__logo--grid;
@@ -32,32 +32,44 @@
       justify-self: center;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
+      // grid-template-rows: 1fr;
 
       @media screen and (max-width: 800px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-row-gap: 0.5em;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 0.5em;
+        width: 100%;
       }
 
       a.active {
         font-weight: 900;
+          @media screen and (max-width: 600px) {
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+          }
+        
       }
     }
     &__item {
       font-size: 1.3em;
-      @media screen and (max-width: 800px) {
+      width: 150px;
+      @media screen and (max-width: 600px) {
         border: 2px solid #000;
         margin-right: auto;
         margin-left: auto;
-        font-size: 1.5em;
+        font-size: 0.9em;
+        width: unset;
+        padding-left: 3px;
+        padding-right: 3px;
       }
       &:hover {
-        color: #39664E;
-        @media screen and (max-width: 800px) {
+        text-decoration: underline;
+        @media screen and (max-width: 600px) {
           font-weight: 0;
           background-color: #000;
           color: #fff;
+          text-decoration: none;
         }
       }
     }

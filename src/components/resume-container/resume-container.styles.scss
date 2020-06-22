@@ -1,0 +1,179 @@
+.resume {
+  width: 800px;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  &__download {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    a {
+      background-color: #6ac996;
+      color: #fff;
+      padding-left: 2px;
+      padding-right: 2px;
+      &:hover {
+        background-color: #39664e;
+      }
+    }
+  }
+  &__header {
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.2fr 0.5fr;
+    grid-template-areas:
+      "photo name1 name1"
+      "photo detail1 detail2"
+      "profile-title profile-title profile-title"
+      "title-details title-details title-details";
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      row-gap: 1em;
+      grid-template-areas:
+        "photo"
+        "name1"
+        "detail1"
+        "detail2"
+        "profile-title"
+        "title-details";
+    }
+    &__photo {
+      grid-area: photo;
+      justify-self: center;
+      img {
+        max-width: 210px;
+        margin-top: 30px;
+      }
+    }
+    &__name {
+      grid-area: name1;
+      align-self: center;
+      text-align: center;
+      @media screen and (max-width: 800px) {
+        font-size: 0.8rem;
+      }
+    }
+    &__details-1 {
+      grid-area: detail1;
+      align-self: center;
+      //   font-size: 0.8rem;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+          list-style: none;
+        }
+      }
+    }
+    &__details-2 {
+      grid-area: detail2;
+      //   font-size: 0.8rem;
+      align-self: center;
+      ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+          list-style: none;
+        }
+      }
+    }
+    &__profile__title {
+      grid-area: profile-title;
+      text-align: center;
+      align-self: center;
+      border-top: 2px solid #6ac996;
+      margin-top: 20px;
+    }
+    &__profile__title__details {
+      grid-area: title-details;
+      text-align: center;
+      //   border-top: 2px solid #6ac996;
+    }
+  }
+
+  &__work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    &__title {
+      text-align: center;
+      border-top: 2px solid #6ac996;
+      @media screen and (max-width: 800px) {
+        margin-top: 10px;
+      }
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-row-gap: 1em;
+      font-size: 0.9em;
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        row-gap: 0.5em;
+      }
+      &__place {
+        text-align: right;
+        padding-right: 10px;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+          // border-top: 2px solid #6ac996;
+          padding: 20px;
+        }
+      }
+      &__place__details {
+        padding-left: 10px;
+      }
+      &__place__details2 {
+        padding-left: 10px;
+        @media screen and (max-width: 800px) {
+          text-align: center;
+          font-weight: 600;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &__skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    li {
+      padding-top: 5px;
+    }
+    &__title {
+      text-align: center;
+      border-top: 2px solid #6ac996;
+      margin-top: 20px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+      }
+      grid-row-gap: 1em;
+      grid-column-gap: 1em;
+      font-size: 0.9em;
+      &__items {
+        font-size: 0.9em;
+      }
+      &__items2 {
+        text-align: center;
+      }
+    }
+  }
+}

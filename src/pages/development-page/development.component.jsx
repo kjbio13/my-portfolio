@@ -13,31 +13,28 @@ const DevelopmentPage = ({ match }) => {
         <div>
             <div className="development">
                 <div className="development__links">
-                    <NavLink to="/development/skills" activeClassName="active">Skills</NavLink>
                     <NavLink to="/development/projects" activeClassName="active">Projects</NavLink>
+                    <NavLink to="/development/skills" activeClassName="active">Skills</NavLink>
+
                 </div>
             </div>
+
             <Route
-                path={`${match.path}/projects`}
+                exact path={`${match.path}`}
                 component={DevelopmentProjects}
             />
 
             <Route
-                path={`${match.path}/skills`}
-                component={DevelopmentSkills}
-            />
-
-            <Route
-                exact path={`${match.path}`}
-                component={DevelopmentSkills}
-            />
-
-           
-            
-            <Route
-                exact path={`${match.path}`}
+                exact path={`${match.path}/projects`}
                 component={DevelopmentProjects}
             />
+
+            <Route
+                exact path={`${match.path}/skills`}
+                component={DevelopmentSkills}
+            />
+
+
         </div>
     );
 };

@@ -10,7 +10,7 @@ class DevelopmentProjects extends React.Component {
 
     constructor(props) {
         super(props);
- 
+
         this.state = {
             data: DEVELOPMENT_DATA,
             match: props.match
@@ -20,21 +20,17 @@ class DevelopmentProjects extends React.Component {
     render() {
 
 
-        const { data, match } = this.state;
+        const { data } = this.state;
 
 
 
         return (
             <div>
-            {/* {console.log(match)} */}
-            
-             {`${match.path}` === "/development" ? <h3>PROJECTS</h3> : null}
                 <div className="development-projects">
 
                     {data.map(({ id, ...otherCollectionProps }) => (
                         <Card key={id} {...otherCollectionProps} />
                     ))}
-
 
                 </div>
             </div>

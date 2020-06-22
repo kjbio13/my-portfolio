@@ -20,15 +20,12 @@ class DesignProjects extends React.Component {
     render() {
 
 
-        const { data, match } = this.state;
+        const { data } = this.state;
 
 
 
         return (
             <div>
-            {/* {console.log(match)} */}
-            
-             {`${match.path}` === "/design" ? <h3>PROJECTS</h3> : null}
                 <div className="design-projects">
 
                     {data.map(({ id, ...otherCollectionProps }) => (

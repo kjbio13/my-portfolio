@@ -12,8 +12,9 @@ const DesignPage = ({ match }) => {
         <div>
             <div className="design">
                 <div className="design__links">
-                    <NavLink to="/design/skills" activeClassName="active">Skills</NavLink>
                     <NavLink to="/design/projects" activeClassName="active">Projects</NavLink>
+                    <NavLink to="/design/skills" activeClassName="active">Skills</NavLink>
+
                 </div>
             </div>
             <Route
@@ -26,13 +27,6 @@ const DesignPage = ({ match }) => {
                 component={DesignSkills}
             />
 
-            <Route
-                exact path={`${match.path}`}
-                component={DesignSkills}
-            />
-
-           
-            
             <Route
                 exact path={`${match.path}`}
                 component={DesignProjects}

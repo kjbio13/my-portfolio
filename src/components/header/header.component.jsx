@@ -16,9 +16,9 @@ const Header = () => {
                 </div>
 
             <div className="header__link__list header__link__list--grid">
-                <NavLink className="header__link__item" to="/design" activeClassName="active">DESIGN</NavLink>
-                <NavLink className="header__link__item" to="/development" activeClassName="active">DEVELOPMENT</NavLink>
-                <NavLink className="header__link__item" to="/personal" activeClassName="active">PERSONAL</NavLink>
+                <NavLink className="header__link__item" to="/design" activeClassName="active">Design</NavLink>
+                <NavLink className="header__link__item" to="/development" activeClassName="active">Development</NavLink>
+                <NavLink className="header__link__item" to="/personal" activeClassName="active">Personal</NavLink>
             </div>
         </div>
     );
