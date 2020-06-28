@@ -5,6 +5,7 @@ import './development-skills.styles.scss'
 import SkillsContainer from '../skills-container/skills-container.component'
 
 import DEVELOPMENT_DATA from '../../data/development-skills.data'
+import SkillsLegend from '../../components/skills-legend/skills-legend.component';
 
 class DevelopmentSkills extends React.Component {
 
@@ -79,7 +80,7 @@ class DevelopmentSkills extends React.Component {
 
 
                 </div>
-
+                <SkillsLegend />
                 <div className="development-skills">
 
                     {(data === "frontend") ? <SkillsContainer data={frontend_data} /> : null}

@@ -38,8 +38,7 @@ const ResumeWorkExperience = () => {
                         <li>REST API</li>
                         <li>Configuration management</li>
                         <li>Implementing ServiceNow Service Portal, Event Management and ServiceNow Orchestration is very desirable.</li>
-                        <br /><br />
-                        <em>ITIL framework</em>
+                        <li>ITIL framework</li>
                         <li>XML, HTML, and Web Services</li>
                         <li>CSS, Bootstrap</li>
                         <li>JavaScript, Jelly Scripting, AngularJS</li>

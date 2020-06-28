@@ -12,19 +12,19 @@ const HomePage = () => {
         <div className="homepage">
             <div className="homepage__profile-photo"><img src={profilePhoto} alt="" /></div>
             <div className="homepage__description">
-                
-                    Hi! I'm Kevin. <br /> A <strong>junior full stack developer</strong> with a passion for <strong>design</strong>.
+
+                Hi! I'm Kevin. <br /> A <strong>junior full stack developer</strong> with a passion for <strong>design</strong>.
                 </div>
-                <div className="homepage__social-media">
-                    <SocialMediaIcon icon="facebook" url="https://facebook.com" />
-                    <SocialMediaIcon icon="instagram" url="https://instagram.com" />
-                    <SocialMediaIcon icon="twitter" url="https://twitter.com" />
-                    <SocialMediaIcon icon="dribbble" url="https://dribbble.com" />
-                    <SocialMediaIcon icon="behance" url="https://behance.net" />
-                    <SocialMediaIcon icon="github" url="https://github.com" />
-                </div>
+            <div className="homepage__social-media">
+                <SocialMediaIcon size="75" roundness="50%" icon="facebook" color="#000" backgroundColor="#fff" url="https://facebook.com" />
+                <SocialMediaIcon size="75" roundness="50%" icon="instagram" color="#000" backgroundColor="#fff" url="https://instagram.com" />
+                <SocialMediaIcon size="75" roundness="50%" icon="twitter" color="#000" backgroundColor="#fff" url="https://twitter.com" />
+                <SocialMediaIcon size="75" roundness="50%" icon="dribbble" color="#000" backgroundColor="#fff" url="https://dribbble.com" />
+                <SocialMediaIcon size="75" roundness="50%" icon="behance" color="#000" backgroundColor="#fff" url="https://behance.net" />
+                <SocialMediaIcon size="75" roundness="50%" icon="github" color="#000" backgroundColor="#fff" url="https://github.com" />
             </div>
-       
+        </div>
+
     );
 };
 

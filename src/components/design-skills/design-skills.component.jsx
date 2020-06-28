@@ -5,6 +5,7 @@ import './design-skills.styles.scss'
 import SkillsContainer from '../skills-container/skills-container.component'
 
 import DESIGN_DATA from '../../data/design-skills.data'
+import SkillsLegend from '../../components/skills-legend/skills-legend.component';
 
 class designSkills extends React.Component {
 
@@ -13,21 +14,21 @@ class designSkills extends React.Component {
 
 
         this.state = {
-            graphic_data: DESIGN_DATA.graphic,
+            tools_data: DESIGN_DATA.tools,
             uiux_data: DESIGN_DATA.uiux,
-            branding_data: DESIGN_DATA.branding,
-            data: "graphic"
+            coding_data: DESIGN_DATA.coding,
+            data: "tools"
         }
 
-        this.handleGraphicClick = this.handleGraphicClick.bind(this);
+        this.handleToolsClick = this.handleToolsClick.bind(this);
         this.handleUIUXClick = this.handleUIUXClick.bind(this);
-        this.handleBrandingClick = this.handleBrandingClick.bind(this);
+        this.handlecodingClick = this.handlecodingClick.bind(this);
     }
 
 
-    handleGraphicClick() {
+    handleToolsClick() {
         this.setState({
-            data: "graphic"
+            data: "tools"
         })
     }
 
@@ -37,15 +38,15 @@ class designSkills extends React.Component {
         })
     }
 
-    handleBrandingClick() {
+    handlecodingClick() {
         this.setState({
-            data: "branding"
+            data: "coding"
         })
     }
 
     render() {
 
-        const { graphic_data, uiux_data, branding_data, data } = this.state;
+        const { tools_data, uiux_data, coding_data, data } = this.state;
 
         return (
             <div>
@@ -53,11 +54,11 @@ class designSkills extends React.Component {
                 <div className="design-skills__links">
 
                     {
-                        (data === "graphic")
+                        (data === "tools")
                             ?
-                            <p className="design-skills__links--active" onClick={this.handleGraphicClick}>Graphic</p>
+                            <p className="design-skills__links--active" onClick={this.handleToolsClick}>Tools</p>
                             :
-                            <p onClick={this.handleGraphicClick}>Graphic</p>
+                            <p onClick={this.handleToolsClick}>Tools</p>
                     }
 
                     {
@@ -71,20 +72,22 @@ class designSkills extends React.Component {
 
 
                     {
-                        (data === "branding")
+                        (data === "coding")
                             ?
-                            <p className="design-skills__links--active" onClick={this.handleBrandingClick}>Branding</p> :
-                            <p onClick={this.handleBrandingClick}>Branding</p>
+                            <p className="design-skills__links--active" onClick={this.handlecodingClick}>Coding</p> :
+                            <p onClick={this.handlecodingClick}>Coding</p>
                     }
 
 
                 </div>
-
+                
+                    <SkillsLegend />
+               
                 <div className="design-skills">
 
-                    {(data === "graphic") ? <SkillsContainer data={graphic_data} /> : null}
+                    {(data === "tools") ? <SkillsContainer data={tools_data} /> : null}
                     {(data === "uiux") ? <SkillsContainer data={uiux_data} /> : null}
-                    {(data === "branding") ? <SkillsContainer data={branding_data} /> : null}
+                    {(data === "coding") ? <SkillsContainer data={coding_data} /> : null}
 
                 </div>
             </div>

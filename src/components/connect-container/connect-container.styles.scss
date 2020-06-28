@@ -1,0 +1,32 @@
+.connect {
+  width: 300px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: 0.5s ease-out 0s 1 translateXRight;
+  @media screen and (max-width: 400px) {
+    margin-left: -15%;
+  }
+  &__social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    div {
+      width: 150px;
+      height: 150px;
+  
+    }
+  }
+}
+
+@keyframes translateXRight {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// animation: 0.5s ease-out 0s 1 translateYDown;

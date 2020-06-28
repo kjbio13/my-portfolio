@@ -1,7 +1,7 @@
 import React from 'react';
 import { SocialMediaIconsReact } from 'social-media-icons-react';
 
-const SocialMediaIcon = ({icon, url}) => {
+const SocialMediaIcon = ({icon, url, color, backgroundColor, roundness, size}) => {
     return (
         <div>
             <SocialMediaIconsReact
@@ -9,12 +9,12 @@ const SocialMediaIcon = ({icon, url}) => {
                 borderWidth="0"
                 borderStyle="solid"
                 icon={icon}
-                iconColor="#000"
-                backgroundColor="#fff"
+                iconColor={color}
+                backgroundColor={backgroundColor}
                 iconSize="1" 
-                roundness="50%"
+                roundness={roundness}
                 url={url}
-                size="75" />
+                size={size} />
         </div>
     );
 };

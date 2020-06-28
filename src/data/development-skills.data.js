@@ -1,4 +1,4 @@
-const SkillsColor = "green";
+const SkillsColor = "#000";
 
 const DEVELOPMENT_DATA = {
     frontend:
@@ -10,19 +10,19 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aa",
                         text: "HTML",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1ab",
                         text: "CSS",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1ac",
                         text: "JavaScript",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -34,13 +34,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ba",
                         text: "Git",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1bb",
                         text: "GitHub",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -52,13 +52,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1c1",
                         text: "HTTPS",
-                        bar: 4,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1c2",
                         text: "CORS",
-                        bar: 4,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
@@ -90,13 +90,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1d1",
                         text: "npm",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1d2",
                         text: "yarn",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -108,7 +108,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1e1",
                         text: "BEM",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -120,7 +120,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ef1",
                         text: "Sass",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -132,13 +132,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ee1",
                         text: "npm scripts",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1ee2",
                         text: "Webpack",
-                        bar: 4,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
@@ -168,13 +168,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1f2",
                         text: "Angular with RxJS and NgRx",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1f3",
                         text: "Vue with VueX",
-                        bar: 2,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -192,13 +192,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1g2",
                         text: "CSS Module",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1g3",
                         text: "Styled JSX",
-                        bar: 1,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -210,19 +210,19 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1h1",
                         text: "HTML Templates",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1h2",
                         text: "Custom Elements",
-                        bar: 3,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1h3",
                         text: "Shadow DOM",
-                        bar: 2,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -234,7 +234,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1i1",
                         text: "Reactstrap",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
@@ -252,19 +252,19 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1i4",
                         text: "Bootstrap",
-                        bar: 1,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1i5",
                         text: "Materialize CSS",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1i6",
                         text: "Bulma",
-                        bar: 1,
+                        bar: 2,
                         color: SkillsColor
                     }
                 ]
@@ -276,13 +276,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1j1",
                         text: "Jest",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1j2",
                         text: "react-testing-library",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -306,7 +306,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1k1",
                         text: "TypeScript",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     }
                 ]
@@ -318,13 +318,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1l1",
                         text: "Storage",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1l2",
                         text: "Web Sockets",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -342,13 +342,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1m1",
                         text: "PRPL Pattern",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1m2",
                         text: "RAIL Model",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -366,7 +366,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1m6",
                         text: "DevTools",
-                        bar: 1,
+                        bar: 4,
                         color: SkillsColor
                     }
                 ]
@@ -414,13 +414,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1p1",
                         text: "React Native",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1p2",
                         text: "Electron",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -431,8 +431,8 @@ const DEVELOPMENT_DATA = {
                 items: [
                     {
                         id: "1q1",
-                        text: "",
-                        bar: 3,
+                        text: "Web Assembly",
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -440,36 +440,7 @@ const DEVELOPMENT_DATA = {
         ],
     backend:
         [
-            // {
-            //     id: "1",
-            //     name: "",
-            //     items: [
-            //         {
-            //             id: "11",
-            //             text: "",
-            //             bar: 3,
-            //             color: SkillsColor
-            //         },
-            //         {
-            //             id: "12",
-            //             text: "",
-            //             bar: 3,
-            //             color: SkillsColor
-            //         },
-            //         {
-            //             id: "13",
-            //             text: "",
-            //             bar: 1,
-            //             color: SkillsColor
-            //         },
-            //         {
-            //             id: "14",
-            //             text: "",
-            //             bar: 1,
-            //             color: SkillsColor
-            //         }
-            //     ]
-            // },
+
             {
                 id: "1aa",
                 name: "Languages",
@@ -477,31 +448,31 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aa1",
                         text: "JavaScript",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1aa2",
                         text: "Python",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1aa3",
                         text: "Java",
-                        bar: 1,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1aa4",
                         text: "C#",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1aa3",
                         text: "php",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
@@ -519,13 +490,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1bb1",
                         text: "Git",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1bb2",
                         text: "GitHub",
-                        bar: 4,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -537,13 +508,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1cc1",
                         text: "PostgreSQL",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "12",
                         text: "MySQL",
-                        bar: 3,
+                        bar: 5,
                         color: SkillsColor
                     }
                 ]
@@ -555,13 +526,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1eee1",
                         text: "MongoDB",
-                        bar: 3,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1eee2",
                         text: "DynamoDB",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -573,13 +544,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ff1",
                         text: "REST",
-                        bar: 3,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1ff2",
                         text: "JSON API",
-                        bar: 3,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
@@ -603,13 +574,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1gg1",
                         text: "CDN",
-                        bar: 3,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
                         id: "1gg2",
                         text: "Client Side",
-                        bar: 3,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
@@ -633,7 +604,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1hh1",
                         text: "Hashing Algorithm",
-                        bar: 3,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
@@ -645,19 +616,19 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1hh3",
                         text: "CORS",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1hh4",
                         text: "Content Security Policy",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1hh5",
                         text: "OWASP Security Risks",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     }
                 ]
@@ -765,13 +736,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ll1",
                         text: "Elasticsearch",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1ll2",
                         text: "Solr",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -783,13 +754,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1mm1",
                         text: "RabbitMQ",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1mm2",
                         text: "Kafka",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -801,7 +772,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1nn1",
                         text: "Docker",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
@@ -822,16 +793,10 @@ const DEVELOPMENT_DATA = {
                 id: "1oo",
                 name: "Web Sockets and Web Servers",
                 items: [
-                    // {
-                    //     id: "1oo1",
-                    //     text: "",
-                    //     bar: 3,
-                    //     color: SkillsColor
-                    // },
                     {
                         id: "1oo2",
                         text: "Nginx",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -843,37 +808,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1oo4",
                         text: "MS IIS",
-                        bar: 1,
-                        color: SkillsColor
-                    }
-                ]
-            },
-            {
-                id: "1pp",
-                name: "",
-                items: [
-                    {
-                        id: "1pp1",
-                        text: "",
                         bar: 3,
-                        color: SkillsColor
-                    },
-                    {
-                        id: "1pp2",
-                        text: "",
-                        bar: 3,
-                        color: SkillsColor
-                    },
-                    {
-                        id: "1pp3",
-                        text: "",
-                        bar: 1,
-                        color: SkillsColor
-                    },
-                    {
-                        id: "1pp4",
-                        text: "",
-                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -885,13 +820,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1qq1",
                         text: "Mitigation Strategies",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1qq2",
                         text: "Horizontal/Vertical Scaling",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -907,19 +842,19 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aaaa1",
                         text: "Python",
-                        bar: 4,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1aaaa2",
                         text: "Ruby",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1aaaa3",
                         text: "Node.js",
-                        bar: 1,
+                        bar: 5,
                         color: SkillsColor
                     },
                     {
@@ -931,7 +866,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aaaa5",
                         text: "Rust",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -943,7 +878,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aaaa7",
                         text: "C++",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     }
                 ]
@@ -954,7 +889,7 @@ const DEVELOPMENT_DATA = {
                 items: [
                     {
                         id: "1bbbb1",
-                        text: "",
+                        text: "OS Concepts",
                         bar: 3,
                         color: SkillsColor
                     }
@@ -967,13 +902,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aaa1",
                         text: "Ubuntu",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1aaa2",
                         text: "CentOS",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -985,13 +920,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1aaa4",
                         text: "Linux",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1aaa5",
                         text: "Unix",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
@@ -1009,25 +944,25 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1bbb1",
                         text: "tmux",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1bbb2",
                         text: "screen",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1bbb3",
                         text: "bash",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1bbb4",
                         text: "vim",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
@@ -1045,7 +980,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1bbb6",
                         text: "emacs",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     }
                 ]
@@ -1057,13 +992,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ccc1",
                         text: "nmon",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1ccc2",
                         text: "iostat",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1093,7 +1028,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ccc7",
                         text: "systemtap",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1123,37 +1058,37 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ddd1",
                         text: "Emails",
-                        bar: 3,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1ddd2",
                         text: "HTTP, HTTPS",
-                        bar: 3,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1ddd3",
                         text: "FTP",
-                        bar: 3,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1ddd4",
                         text: "SSL/TLS",
-                        bar: 1,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1ddd5",
                         text: "SSH",
-                        bar: 1,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1ddd6",
                         text: "Port Forwarding",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     }
                 ]
@@ -1165,13 +1100,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1eeee1",
                         text: "Reverse Proxy",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1eeee2",
                         text: "Caching server",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1201,13 +1136,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1fff1",
                         text: "IIS",
-                        bar: 3,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
                         id: "1fff2",
                         text: "Nginx",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1225,7 +1160,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1fff5",
                         text: "Caddy",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1260,8 +1195,8 @@ const DEVELOPMENT_DATA = {
                 items: [
                     {
                         id: "1ggg1",
-                        text: "",
-                        bar: 3,
+                        text: "Infrastructure as a Code",
+                        bar: 2,
                         color: SkillsColor
                     }
                 ]
@@ -1273,13 +1208,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1hhh1",
                         text: "Docker",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1hhh2",
                         text: "LXC",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     }
                 ]
@@ -1291,13 +1226,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1iii1",
                         text: "Ansible",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1iii2",
                         text: "Salt",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1321,19 +1256,19 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1jjj1",
                         text: "Kubernetes",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
                         id: "1jjj2",
                         text: "Mesos",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1jjj3",
                         text: "Docker",
-                        bar: 1,
+                        bar: 2,
                         color: SkillsColor
                     },
                     {
@@ -1357,13 +1292,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1kkk1",
                         text: "Terraform",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1kkk2",
                         text: "CloudFormation",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1381,13 +1316,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1lll1",
                         text: "Prometheus",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1lll2",
                         text: "Nagios",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1417,49 +1352,19 @@ const DEVELOPMENT_DATA = {
                 ]
             },
             {
-                id: "1mmm",
-                name: "",
-                items: [
-                    {
-                        id: "1mmm1",
-                        text: "",
-                        bar: 3,
-                        color: SkillsColor
-                    },
-                    {
-                        id: "1mmm2",
-                        text: "",
-                        bar: 3,
-                        color: SkillsColor
-                    },
-                    {
-                        id: "1mmm3",
-                        text: "",
-                        bar: 1,
-                        color: SkillsColor
-                    },
-                    {
-                        id: "1mmm4",
-                        text: "",
-                        bar: 1,
-                        color: SkillsColor
-                    }
-                ]
-            },
-            {
                 id: "1nnn",
                 name: "Application Monitoring",
                 items: [
                     {
                         id: "1nnn1",
                         text: "Jaeger",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1nnn2",
                         text: "New Relic",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1489,13 +1394,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ooo1",
                         text: "Elastic Stack",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
                         id: "1ooo2",
                         text: "Grayog",
-                        bar: 3,
+                        bar: 1,
                         color: SkillsColor
                     },
                     {
@@ -1531,13 +1436,13 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1ppp3",
                         text: "Azure",
-                        bar: 1,
+                        bar: 3,
                         color: SkillsColor
                     },
                     {
                         id: "1ppp4",
                         text: "Heroku",
-                        bar: 1,
+                        bar: 4,
                         color: SkillsColor
                     },
                     {
@@ -1567,7 +1472,7 @@ const DEVELOPMENT_DATA = {
                     {
                         id: "1qqq1",
                         text: "",
-                        bar: 3,
+                        bar: 2,
                         color: SkillsColor
                     }
                 ]

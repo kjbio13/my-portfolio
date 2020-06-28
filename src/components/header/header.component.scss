@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 .header {
+  animation: 0.5s ease-out 0s 1 translateYDown;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 0.3fr;
   grid-column-gap: 0.9em;
   grid-template-areas:
     "header__logo--grid header__logo--grid header__logo--grid"
     "header__link__list--grid header__link__list--grid header__link__list--grid";
+
+  margin-bottom: 3em;
 
   @media screen and (max-width: 800px) {
     grid-template-columns: 1fr;
@@ -15,6 +19,7 @@
     grid-template-areas:
       "header__logo--grid"
       "header__link__list--grid";
+    margin-bottom: unset;
   }
 
   &__logo {
@@ -32,46 +37,52 @@
       justify-self: center;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      // grid-template-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-column-gap: 0.5em;
 
-      @media screen and (max-width: 800px) {
-        // grid-template-columns: 1fr;
-        // grid-template-rows: 1fr 1fr 1fr;
-        grid-column-gap: 0.5em;
-        width: 100%;
-      }
+      // @media screen and (max-width: 800px) {
+      //   // grid-template-columns: 1fr;
+      //   // grid-template-rows: 1fr 1fr 1fr;
+      //   grid-column-gap: 0.5em;
+      // }
 
       a.active {
-        font-weight: 900;
-          @media screen and (max-width: 600px) {
-            text-decoration: none;
-            color: #fff;
-            background-color: #000;
-          }
-        
+        // font-weight: 900;
+        // @media screen and (max-width: 600px) {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        // }
       }
     }
     &__item {
-      font-size: 1.3em;
+      font-size: 1.2em;
       width: 150px;
-      @media screen and (max-width: 600px) {
-        border: 2px solid #000;
+      border: 2px solid #000;
+      padding-left: 3px;
+      padding-right: 3px;
+      @media screen and (max-width: 800px) {
         margin-right: auto;
         margin-left: auto;
         font-size: 0.9em;
+
         width: unset;
-        padding-left: 3px;
-        padding-right: 3px;
       }
       &:hover {
-        text-decoration: underline;
-        @media screen and (max-width: 600px) {
-          font-weight: 0;
-          background-color: #000;
-          color: #fff;
-          text-decoration: none;
-        }
+        font-weight: 0;
+        background-color: #000;
+        color: #fff;
       }
     }
+  }
+}
+
+
+@keyframes translateYDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

@@ -2,8 +2,9 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
-import DesignProjects from '../../components/design-projects/design-projects.component'
-import DesignSkills from '../../components/design-skills/design-skills.component'
+import DesignProjects from '../../components/design-projects/design-projects.component';
+import DesignSkills from '../../components/design-skills/design-skills.component';
+
 
 import './design.styles.scss'
 
@@ -17,6 +18,7 @@ const DesignPage = ({ match }) => {
 
                 </div>
             </div>
+            
             <Route
                 path={`${match.path}/projects`}
                 component={DesignProjects}

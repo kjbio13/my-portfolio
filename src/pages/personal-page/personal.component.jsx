@@ -3,7 +3,8 @@ import { Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 import ResumeContainer from '../../components/resume-container/resume-container.component';
-import HobbiesContainer from '../../components/hobbies-container/hobbies-container.component'
+import HobbiesContainer from '../../components/hobbies-container/hobbies-container.component';
+import ConnectContainer from '../../components/connect-container/connect-container.component';
 
 import './personal.styles.scss'
 
@@ -14,7 +15,7 @@ const PersonalPage = ({ match }) => {
                 <div className="personal__links">
                     <NavLink to="/personal/hobbies" activeClassName="active">Hobbies</NavLink>
                     <NavLink to="/personal/resume" activeClassName="active">Resume</NavLink>
-                    <NavLink to="/personal/contact" activeClassName="active">Contact</NavLink>
+                    <NavLink to="/personal/connect" activeClassName="active">Connect</NavLink>
 
                 </div>
             </div>
@@ -31,6 +32,11 @@ const PersonalPage = ({ match }) => {
             <Route
                 exact path={`${match.path}`}
                 component={HobbiesContainer}
+            />
+
+            <Route
+                exact path={`${match.path}/connect`}
+                component={ConnectContainer}
             />
         </div>
 

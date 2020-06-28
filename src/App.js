@@ -9,8 +9,7 @@ import Header from './components/header/header.component'
 import HomePage from './pages/homepage/homepage.component'
 import DesignPage from './pages/design-page/design.component';
 import DevelopmentPage from './pages/development-page/development.component';
-import PersonalPage from './pages/personal-page/personal.component'
-
+import PersonalPage from './pages/personal-page/personal.component' 
 const App = () => {
 
   return (
