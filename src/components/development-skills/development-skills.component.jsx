@@ -51,8 +51,7 @@ class DevelopmentSkills extends React.Component {
         return (
             <div>
 
-                <div className="development-skills__links">
-
+                <div className={`development-skills__links ${this.props.class}`}>
                     {
                         (data === "frontend")
                             ?
@@ -80,12 +79,12 @@ class DevelopmentSkills extends React.Component {
 
 
                 </div>
-                <SkillsLegend />
+                <SkillsLegend textColor={this.props.textColor} />
                 <div className="development-skills">
 
-                    {(data === "frontend") ? <SkillsContainer data={frontend_data} /> : null}
-                    {(data === "backend") ? <SkillsContainer data={backend_data} /> : null}
-                    {(data === "devops") ? <SkillsContainer data={devops_data} /> : null}
+                    {(data === "frontend") ? <SkillsContainer textColor={this.props.textColor} data={frontend_data} /> : null}
+                    {(data === "backend") ? <SkillsContainer textColor={this.props.textColor} data={backend_data} /> : null}
+                    {(data === "devops") ? <SkillsContainer textColor={this.props.textColor} data={devops_data} /> : null}
 
                 </div>
             </div>

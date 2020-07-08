@@ -50,8 +50,8 @@ class designSkills extends React.Component {
 
         return (
             <div>
-
-                <div className="design-skills__links">
+                {console.log(this.themeProps)}
+                <div className={`design-skills__links ${this.props.class}`}>
 
                     {
                         (data === "tools")
@@ -80,14 +80,14 @@ class designSkills extends React.Component {
 
 
                 </div>
-                
-                    <SkillsLegend />
-               
+
+                <SkillsLegend textColor={this.props.textColor}/>
+
                 <div className="design-skills">
 
-                    {(data === "tools") ? <SkillsContainer data={tools_data} /> : null}
-                    {(data === "uiux") ? <SkillsContainer data={uiux_data} /> : null}
-                    {(data === "coding") ? <SkillsContainer data={coding_data} /> : null}
+                    {(data === "tools") ? <SkillsContainer textColor={this.props.textColor} data={tools_data} /> : null}
+                    {(data === "uiux") ? <SkillsContainer textColor={this.props.textColor} data={uiux_data} /> : null}
+                    {(data === "coding") ? <SkillsContainer textColor={this.props.textColor} data={coding_data} /> : null}
 
                 </div>
             </div>

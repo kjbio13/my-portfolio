@@ -8,11 +8,11 @@ import DevelopmentProjects from '../../components/development-projects/developme
 import DevelopmentSkills from '../../components/development-skills/development-skills.component';
 
 
-const DevelopmentPage = ({ match }) => {
+const DevelopmentPage = ({ match, ...themeProps }) => {
     return (
         <div>
             <div className="development">
-                <div className="development__links">
+                <div className={`development__links ${themeProps.class}`}>
                     <NavLink to="/development/projects" activeClassName="active">Projects</NavLink>
                     <NavLink to="/development/skills" activeClassName="active">Skills</NavLink>
 
@@ -20,22 +20,22 @@ const DevelopmentPage = ({ match }) => {
             </div>
 
             <Route
-                exact path={`${match.path}`}
-                component={DevelopmentProjects}
+                exact path={"/development/"}
+                component={() => <DevelopmentProjects  {...themeProps} />}
             />
 
             <Route
-                exact path={`${match.path}/projects`}
-                component={DevelopmentProjects}
+                exact path={"/development/projects"}
+                component={() => <DevelopmentProjects  {...themeProps} />}
             />
 
             <Route
-                exact path={`${match.path}/skills`}
-                component={DevelopmentSkills}
+                exact path={"/development/skills"}
+                component={() => <DevelopmentSkills  {...themeProps} />}
             />
 
 
-        </div>
+        </div >
     );
 };
 

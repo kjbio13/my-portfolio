@@ -1,5 +1,6 @@
 .homepage {
-  margin-top: 5vh;
+  // margin-top: 6vw;
+  margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
@@ -10,7 +11,7 @@
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.3fr;
     grid-template-areas:
       "profile-photo"
       "description"
@@ -22,6 +23,7 @@
     justify-self: center;
     align-self: center;
     animation: 0.5s ease-out 0s 1 translateXLeft;
+
     img {
       width: 35vw;
       @media screen and (max-width: 1000px) {
@@ -37,10 +39,12 @@
     text-align: right;
     font-size: 2.8em;
     animation: 0.5s ease-out 0s 1 translateXRight;
+
     @media screen and (max-width: 1000px) {
       font-size: 1.5em;
       text-align: center;
       align-self: start;
+      margin-bottom: 30px;
     }
   }
 
@@ -58,32 +62,5 @@
       grid-template-rows: 0.2fr 0.2fr;
       text-align: center;
     }
-  }
-}
-
-@keyframes translateYDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes translateXLeft {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes translateXRight {
-  0% {
-    transform: translateX(50%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }

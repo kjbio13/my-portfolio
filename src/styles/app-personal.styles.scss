@@ -1,0 +1,99 @@
+.theme {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 1000px) {
+      margin-top: 2em;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 2em;
+    }
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr;
+      cursor: pointer;
+      &:hover {
+        animation: 0.3s ease-out 0s 1 hoverUp;
+        transform: translateY(-8%);
+      }
+      &__title {
+        text-align: center;
+      }
+      &__circle {
+        text-align: center;
+
+        svg {
+          width: 13px;
+          margin: 5px;
+          filter: drop-shadow(1px 1px 0px #d5d5d5)
+            drop-shadow(-1px 1px 0px #d5d5d5) drop-shadow(1px -1px 0px #d5d5d5)
+            drop-shadow(-1px -1px 0px #d5d5d5);
+        }
+      }
+    }
+  }
+}
+
+.oasis {
+  a,
+  p {
+    border-color: #000 !important;
+    background-color: #ffa351ff !important;
+    color: #000 !important;
+    &:hover {
+      background-color: #eed971ff !important;
+      color: #000 !important;
+    }
+  }
+  a.active,
+  p.development-skills__links--active,
+  p.design-skills__links--active {
+    background-color: #eed971ff !important;
+    color: #000 !important;
+  }
+}
+
+.rhubarb {
+  a,
+  p {
+    border-color: #fc766aff !important;
+    background-color: #f9a12eff !important;
+    color: #fff !important;
+    &:hover {
+      background-color: #fff !important;
+      color: #f9a12eff !important;
+    }
+  }
+  a.active,
+  p.development-skills__links--active,
+  p.design-skills__links--active {
+    background-color: #9b4a97ff !important;
+    color: #fff !important;
+  }
+}
+
+.pumpkin {
+  a,
+  p {
+    border-color: #006747ff !important;
+    background-color: #e95c20ff !important;
+    color: #fff !important;
+    &:hover {
+      background-color: #fff !important;
+      color: #e95c20ff !important;
+    }
+  }
+  a.active,
+  p.development-skills__links--active,
+  p.design-skills__links--active {
+    background-color: #4f2c1dff !important;
+    color: #fff !important;
+  }
+}

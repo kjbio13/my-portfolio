@@ -1,3 +1,17 @@
+/* .themeContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+  
+}
+.themeContainer div{
+  cursor: pointer;
+text-align: center;
+}
+.body{
+  background-color: #282c34;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

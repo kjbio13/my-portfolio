@@ -8,11 +8,11 @@ import ConnectContainer from '../../components/connect-container/connect-contain
 
 import './personal.styles.scss'
 
-const PersonalPage = ({ match }) => {
+const PersonalPage = ({ match, ...themeProps }) => {
     return (
         <div>
             <div className="personal">
-                <div className="personal__links">
+                <div className={`personal__links  ${themeProps.class}`}>
                     <NavLink to="/personal/hobbies" activeClassName="active">Hobbies</NavLink>
                     <NavLink to="/personal/resume" activeClassName="active">Resume</NavLink>
                     <NavLink to="/personal/connect" activeClassName="active">Connect</NavLink>
@@ -20,23 +20,23 @@ const PersonalPage = ({ match }) => {
                 </div>
             </div>
             <Route
-                path={`${match.path}/hobbies`}
-                component={HobbiesContainer}
+                path={"/personal/hobbies"}
+                component={() => <HobbiesContainer {...themeProps} />}
             />
 
             <Route
-                path={`${match.path}/resume`}
-                component={ResumeContainer}
+                path={"/personal/resume"}
+                component={() => <ResumeContainer {...themeProps} />}
             />
 
             <Route
-                exact path={`${match.path}`}
-                component={HobbiesContainer}
+                exact path={"/personal/"}
+                component={() => <HobbiesContainer {...themeProps} />}
             />
 
             <Route
-                exact path={`${match.path}/connect`}
-                component={ConnectContainer}
+                exact path={"/personal/connect"}
+                component={() => <ConnectContainer {...themeProps} />}
             />
         </div>
 

@@ -8,30 +8,30 @@ import DesignSkills from '../../components/design-skills/design-skills.component
 
 import './design.styles.scss'
 
-const DesignPage = ({ match }) => {
+const DesignPage = ({ match, ...themeProps }) => {
     return (
         <div>
             <div className="design">
-                <div className="design__links">
+                <div className={`design__links ${themeProps.class}`}>
                     <NavLink to="/design/projects" activeClassName="active">Projects</NavLink>
                     <NavLink to="/design/skills" activeClassName="active">Skills</NavLink>
 
                 </div>
             </div>
-            
+
             <Route
-                path={`${match.path}/projects`}
-                component={DesignProjects}
+                path={"/design/projects"}
+                component={() => <DesignProjects  {...themeProps} />}
             />
 
             <Route
-                path={`${match.path}/skills`}
-                component={DesignSkills}
+                path={"/design/skills"}
+                component={() => <DesignSkills  {...themeProps} />}
             />
 
             <Route
-                exact path={`${match.path}`}
-                component={DesignProjects}
+                exact path={"/design/"}
+                component={() => <DesignProjects  {...themeProps} />}
             />
         </div>
 

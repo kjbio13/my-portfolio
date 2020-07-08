@@ -28,7 +28,7 @@ class HobbiesContainer extends React.Component {
                 <div className="development-projects">
 
                     {data.map(({ id, ...otherCollectionProps }) => (
-                        <Card key={id} {...otherCollectionProps} />
+                        <Card key={id} {...otherCollectionProps} theme={this.props}/>
                     ))}
 
                 </div>

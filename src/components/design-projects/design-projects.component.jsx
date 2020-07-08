@@ -29,7 +29,7 @@ class DesignProjects extends React.Component {
                 <div className="design-projects">
 
                     {data.map(({ id, ...otherCollectionProps }) => (
-                        <Card key={id} {...otherCollectionProps} />
+                        <Card key={id} {...otherCollectionProps} theme={this.props}/>
                     ))}
 
 

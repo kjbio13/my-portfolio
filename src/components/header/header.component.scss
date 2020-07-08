@@ -51,7 +51,7 @@
         // @media screen and (max-width: 600px) {
         text-decoration: none;
         color: #fff;
-        background-color: #000;
+        background-color: #000 !important;
         // }
       }
     }
@@ -70,7 +70,7 @@
       }
       &:hover {
         font-weight: 0;
-        background-color: #000;
+        background-color: #000 !important;
         color: #fff;
       }
     }
@@ -78,11 +78,3 @@
 }
 
 
-@keyframes translateYDown {
-  0% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
