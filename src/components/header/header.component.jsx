@@ -12,7 +12,7 @@ const Header = ({ ...themeProps }) => {
         <div className="header">
 
             <div className="header__logo header__logo--grid">
-                <Link style={{ color: `${themeProps.textColor}` }} to="/">KEVIN JEFFERSON</Link>
+                <Link style={{ color: `${themeProps.textColor}` }} to="/my-portfolio/">KEVIN JEFFERSON</Link>
             </div>
 
             <div className={`header__link__list header__link__list--grid ${themeProps.class}`}>
