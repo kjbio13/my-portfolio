@@ -11,6 +11,7 @@ import DesignPage from './pages/design-page/design.component';
 import DevelopmentPage from './pages/development-page/development.component';
 import PersonalPage from './pages/personal-page/personal.component'
 import Footer from './components/footer/footer.component'
+import LoadingPage from './pages/loading-page/loading-page.component';
 
 import './App.css'
 import './styles/animations.css'
@@ -29,13 +30,18 @@ class App extends React.Component {
       color2: "",
       color3: "",
       textColor: "",
-      borderColor: ""
+      borderColor: "",
+      isLoading: true
     }
     this.handlePalleteDefaultClick = this.handlePalleteDefaultClick.bind(this);
     this.handlePalleteOneClick = this.handlePalleteOneClick.bind(this);
     this.handlePalleteTwoClick = this.handlePalleteTwoClick.bind(this);
     this.handlePalleteThreeClick = this.handlePalleteThreeClick.bind(this);
 
+  }
+
+  componentDidMount() {
+    this.setState({ isLoading: false })
   }
 
   handlePalleteDefaultClick() {
@@ -92,64 +98,70 @@ class App extends React.Component {
     const { ...themeProps } = this.state;
 
     return (
+
       <div>
-        <Helmet bodyAttributes={{ style: `background-attachment: fixed; height: 100vh; background-image: linear-gradient(${themeProps.degree}deg, ${themeProps.color1} 50%, ${themeProps.color2} 50.15%` }}>
+        {this.state.isLoading ? <LoadingPage /> :
+          <div>
+            <Helmet bodyAttributes={{ style: `background-attachment: fixed; height: 100vh; background-image: linear-gradient(${themeProps.degree}deg, ${themeProps.color1} 50%, ${themeProps.color2} 50.15%` }}>
 
-          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        </Helmet>
-        <GlobalStyle />
+              <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+            </Helmet>
+            <GlobalStyle />
 
-        <Header {...themeProps} />
 
-        <Switch>
 
-          <Route exact path="/" component={() => <HomePage {...themeProps} />} />
-          <Route exact path="/my-portfolio" component={() => <HomePage {...themeProps} />} />
-          <Route path="/design" component={() => <DesignPage {...themeProps} />} />
-          <Route path="/development" component={() => <DevelopmentPage {...themeProps} />} />
-          <Route path="/personal" component={() => <PersonalPage {...themeProps} />} />
+            <Header {...themeProps} />
 
-        </Switch>
+            <Switch>
 
-        <div className="theme" style={{ color: `${themeProps.textColor}` }}>
-          <div className="theme__title">CHOOSE A THEME:</div>
-          <div className="theme__list">
-            <div className="theme__list__item" onClick={this.handlePalleteDefaultClick}>
-              <div className="theme__list__item__title">Panda</div>
-              <div className="theme__list__item__circle">
-                <Circle />
-                <Circle fill="#fff" />
+              <Route exact path="/" component={() => <HomePage {...themeProps} />} />
+              <Route exact path="/my-portfolio" component={() => <HomePage {...themeProps} />} />
+              <Route path="/design" component={() => <DesignPage {...themeProps} />} />
+              <Route path="/development" component={() => <DevelopmentPage {...themeProps} />} />
+              <Route path="/personal" component={() => <PersonalPage {...themeProps} />} />
+
+            </Switch>
+
+            <div className="theme" style={{ color: `${themeProps.textColor}` }}>
+              <div className="theme__title">CHOOSE A THEME:</div>
+              <div className="theme__list">
+                <div className="theme__list__item" onClick={this.handlePalleteDefaultClick}>
+                  <div className="theme__list__item__title">Panda</div>
+                  <div className="theme__list__item__circle">
+                    <Circle />
+                    <Circle fill="#fff" />
+                  </div>
+                </div>
+                <div className="theme__list__item" onClick={this.handlePalleteTwoClick}>
+                  <div className="theme__list__item__title">Rhubarb</div>
+                  <div className="theme__list__item__circle">
+                    <Circle fill="#F9A12EFF" />
+                    <Circle fill="#FC766AFF" />
+                    <Circle fill="#9B4A97FF" />
+                  </div>
+                </div>
+                <div className="theme__list__item" onClick={this.handlePalleteOneClick}>
+                  <div className="theme__list__item__title">Oasis</div>
+                  <div className="theme__list__item__circle">
+                    <Circle fill="#FFA351FF" />
+                    <Circle fill="#FFBE7BFF" />
+                    <Circle fill="#EED971FF" />
+                  </div>
+                </div>
+
+                <div className="theme__list__item" onClick={this.handlePalleteThreeClick}>
+                  <div className="theme__list__item__title">Pumpkin</div>
+                  <div className="theme__list__item__circle">
+                    <Circle fill="#E95C20FF" />
+                    <Circle fill="#006747FF" />
+                    <Circle fill="#4F2C1DFF" />
+                  </div></div>
               </div>
-            </div>
-            <div className="theme__list__item" onClick={this.handlePalleteTwoClick}>
-              <div className="theme__list__item__title">Rhubarb</div>
-              <div className="theme__list__item__circle">
-                <Circle fill="#F9A12EFF" />
-                <Circle fill="#FC766AFF" />
-                <Circle fill="#9B4A97FF" />
-              </div>
-            </div>
-            <div className="theme__list__item" onClick={this.handlePalleteOneClick}>
-              <div className="theme__list__item__title">Oasis</div>
-              <div className="theme__list__item__circle">
-                <Circle fill="#FFA351FF" />
-                <Circle fill="#FFBE7BFF" />
-                <Circle fill="#EED971FF" />
-              </div>
-            </div>
 
-            <div className="theme__list__item" onClick={this.handlePalleteThreeClick}>
-              <div className="theme__list__item__title">Pumpkin</div>
-              <div className="theme__list__item__circle">
-                <Circle fill="#E95C20FF" />
-                <Circle fill="#006747FF" />
-                <Circle fill="#4F2C1DFF" />
-              </div></div>
-          </div>
+            </div>
+            <Footer {...themeProps} />
 
-        </div>
-        <Footer {...themeProps} />
-
+          </div>}
       </div>
     )
   }
