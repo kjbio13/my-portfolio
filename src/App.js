@@ -116,9 +116,9 @@ class App extends React.Component {
 
               <Route exact path="/" component={() => <HomePage {...themeProps} />} />
               <Route exact path="/my-portfolio" component={() => <HomePage {...themeProps} />} />
-              <Route path="/design" component={() => <DesignPage {...themeProps} />} />
-              <Route path="/development" component={() => <DevelopmentPage {...themeProps} />} />
-              <Route path="/personal" component={() => <PersonalPage {...themeProps} />} />
+              <Route exact path="/design" component={() => <DesignPage {...themeProps} />} />
+              <Route exact path="/development" component={() => <DevelopmentPage {...themeProps} />} />
+              <Route exact path="/personal" component={() => <PersonalPage {...themeProps} />} />
 
             </Switch>
           }
