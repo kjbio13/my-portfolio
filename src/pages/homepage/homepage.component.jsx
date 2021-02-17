@@ -17,7 +17,7 @@ const HomePage = ({ ...themeProps }) => {
                 style={{ color: `${themeProps.textColor}` }}
             >
 
-                Hi! I'm Kevin. <br /> A <strong>junior full stack developer</strong> with a passion for <strong>design</strong>.
+                Hi! I'm Kevin. <br /> A <strong>full stack developer</strong> with a passion for <strong>design</strong>.
                 </div>
 
             <div className="homepage__social-media">
