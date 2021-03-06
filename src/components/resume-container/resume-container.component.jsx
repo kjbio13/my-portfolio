@@ -26,8 +26,8 @@ const ResumeContainer = () => {
                         <li><strong>Last Name:</strong></li>
                         <li>Souribio</li>
                         <li><br /></li>
-                        <li><strong>Date of Birth:</strong></li>
-                        <li>13/01/1993</li>
+                        {/* <li><strong>Date of Birth:</strong></li> */}
+                        {/* <li>13/01/1993</li> */}
 
 
                     </ul>
@@ -37,8 +37,8 @@ const ResumeContainer = () => {
                         <li><strong>Location:</strong></li>
                         <li>London, United Kingdom</li>
                         <li><br /></li>
-                        <li><strong>Phone Number:</strong></li>
-                        <li>07825124571</li>
+                        {/* <li><strong>Phone Number:</strong></li> */}
+                        {/* <li>07825124571</li> */}
                         <li><br /></li>
                         <li><strong>Email Address:</strong></li>
                         <li>kevinsouribio13@gmail.com</li>
